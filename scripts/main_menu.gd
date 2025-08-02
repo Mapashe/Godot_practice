@@ -12,3 +12,7 @@ func _process(delta):
 
 func _on_boton_bark_pressed():
 	get_tree().change_scene_to_file("res://scenes/btn_bark.tscn")
+
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/catch.tscn")
