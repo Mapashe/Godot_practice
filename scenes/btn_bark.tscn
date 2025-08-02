@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://byaunrqrghrwo"]
+[gd_scene load_steps=3 format=3 uid="uid://byaunrqrghrwo"]
 
-[ext_resource type="Script" path="res://Pusheable.gd" id="1_y64wv"]
+[ext_resource type="Script" path="res://scripts/Pusheable.gd" id="1_y64wv"]
+[ext_resource type="Script" path="res://scripts/back.gd" id="2_3mhgv"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -23,4 +24,14 @@ offset_bottom = 400.0
 text = "Pusheable btn"
 script = ExtResource("1_y64wv")
 
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 26.0
+offset_right = 58.0
+offset_bottom = 57.0
+text = "back"
+script = ExtResource("2_3mhgv")
+
 [connection signal="pressed" from="Pusheable" to="Pusheable" method="_on_pressed"]
+[connection signal="pressed" from="back" to="back" method="_on_pressed"]
